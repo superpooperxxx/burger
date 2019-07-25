@@ -1,0 +1,85 @@
+.BuildControl{
+        display: flex;
+        align-items: center;
+        height: 20%;
+}
+.Ingredient{
+        color: #2B3252;
+        text-transform: uppercase;
+        font-weight: 700;
+}
+button{
+        width: 80px;
+        height: 40px;
+        border: 2px solid #2B3252;
+        border-radius: 5px;
+        background: none;
+        box-sizing: border-box;
+        color: #2B3252;
+        margin-left: 2vw;
+        text-transform: uppercase;
+        font-weight: bold;
+}
+button:focus{
+        outline: unset;
+}
+.More:hover{
+        background-color: rgb(153, 223, 153);
+        color: white;
+}
+.Less:hover{
+        background-color: rgb(218, 86, 86);
+        color: white;
+}
+
+
+@media (max-width: 1200px) and (orientation: portrait){
+        button{
+                width: 100px;
+                height: 60px;
+                font-size: 18px;
+        }
+}
+@media (max-width: 992px) and (orientation: portrait){
+        button{
+                width: 100px;
+                height: 40px;
+                font-size: 14px;
+        }
+}
+@media (max-width: 992px) and (orientation: landscape){
+        .BuildControl{
+                flex-direction: column;
+                height: unset;
+        }
+        .Less{
+                margin-bottom: 5px;
+        }
+}
+@media (max-width: 576px) and (orientation: portrait){
+        button{
+                width: 80px;
+                height: 40px;
+                font-size: 12px;
+        }
+}
+@media (max-width: 768px) and (orientation: landscape){
+        button{
+                width: 60px;
+                height: 30px;
+                font-size: 12px;
+        }
+        .Ingredient{
+                font-size: 12px;
+        }
+}
+@media (max-width: 400px) and (orientation: portrait){
+        button{
+                width: 60px;
+                height: 30px;
+                font-size: 12px;
+        }
+        .Ingredient{
+                font-size: 12px;
+        }
+}

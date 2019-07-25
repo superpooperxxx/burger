@@ -1,0 +1,60 @@
+.Header{
+        height: 10vh;
+        background-color: rgb(255, 237, 157);
+        margin: 0 auto;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2vw;
+}
+
+.Order{
+        background-color: rgb(120, 120, 211);
+        color: #fff;
+        margin: 0;
+}
+.Payment{
+        display: flex;
+        align-items: center;
+}
+.Payment button:hover{
+        background-color: rgb(89, 89, 199);
+}
+.Payment button{
+        margin-left: 1.5vw;
+}
+.Total{
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 800;
+}
+
+@media (max-width: 992px) and (orientation: landscape){
+        img{
+                width: 30px;
+        }
+        .Total{
+                font-size: 12px;
+        }
+        .Payment button{
+                height: 30px;
+                width: 60px;
+                font-size: 10px;
+        }
+}
+@media (max-width: 568px) and (orientation: landscape){
+        img{
+                width: 25px;
+        }
+        .Payment button{
+                height: 25px;
+                width: 50px;
+                font-size: 8px;
+        }
+}
+@media (max-width: 568px) and (orientation: portrait){
+        .Total{
+                font-size: 14px;
+        }
+}
